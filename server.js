@@ -5,7 +5,7 @@ const port = process.env.PORT || 3030;
 const fixedQueryParams = "&currencyId=EUR&idtype=isin&frequency=daily&outputType=JSON"
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/fundprices', (req, res) => {
     queryParams = req.query;
     instance.get(`/timeseries_price/2nhcdckzon?id=${queryParams.id}&startDate=${queryParams.startDate}&endDate=${queryParams.endDate}${fixedQueryParams}`)
         .then(response => {
