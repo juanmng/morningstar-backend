@@ -1,0 +1,14 @@
+{
+    "name": "morningstar_backend",
+    "version": "1.0.0",
+    "main": "server.js",
+    "author": "juanmng",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.17.1",
+        "express": "^4.16.2"
+    },
+    "scripts": {
+        "start": "node server.js"
+    }
+}
